@@ -81,7 +81,7 @@ Since only one chunk passes through at a time, this DJ set should have plenty of
 Since we're decoding the audio on the fly, we can specify that we'd like to use
 that output for another destination besides our ears:
 
-```
+```javascript
 // null arguments mean defaults, true implies default output encoding (wav)
 var ep    = new EarPipe(null, null, true),
     hotel = fs.createReadStream('./hotel.mp3');
@@ -92,7 +92,7 @@ hotel.pipe(ep).pipe(fs.createWriteStream('./hotel.wav'));
 
 Or pipe to another process:
 
-```
+```javascript
 var ep      = new EarPipe('wav'),
     epTrans = new EarPipe(null, null, true),
     audio   = someStreamingNetworkData();
