@@ -1,0 +1,17 @@
+{
+  "name": "ear-pipe",
+  "version": "0.0.0",
+  "description": "Pipe audio streams to your ears.",
+  "main": "index.js",
+  "author": {
+    "name": "Dan Motzenbecker",
+    "email": "dan@oxism.com",
+    "url": "http://oxism.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/dmotz/ear-pipe"
+  },
+  "license": "MIT",
+  "keywords": ["audio", "stream", "pipe", "sox", "sound", "transcode"]
+}
