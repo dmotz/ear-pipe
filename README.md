@@ -24,9 +24,8 @@ $ npm install --save ear-pipe
 ### Usage
 
 ```javascript
-var EarPipe = require('ear-pipe');
-
-ep = new EarPipe(/* <type>, <bitrate>, <transcode-type> */);
+var EarPipe = require('ear-pipe'),
+    ep      = new EarPipe(/* <type>, <bitrate>, <transcode-type> */);
 
 ```
 
@@ -105,5 +104,5 @@ epTrans.pipe(anotherStreamingAudioConsumer);
 ### Killing
 
 Kill an ear-pipe instance by calling its `kill()` method. If you're interested
-in the underlying SoX process, access `.process`.
+in the underlying SoX process, access an instance's `.process` property.
 
